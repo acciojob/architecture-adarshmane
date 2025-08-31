@@ -1,16 +1,103 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Architecture</title>
+  <style>
+    body {
+      background: #f4f6f8;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      margin: 40px 0;
+    }
+    .container {
+      background: #fff;
+      width: 1100px;
+      padding: 32px 36px 36px 36px;
+      box-shadow: 0 4px 32px rgba(0,0,0,0.12);
+      border-radius: 16px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2.6rem;
+      letter-spacing: 1.5px;
+      color: #234269;
+      margin-bottom: 18px;
+    }
+    .imageContainer {
+      display: flex;
+      justify-content: center;
+      margin: 30px 0 38px 0;
+    }
+    .imageContainer img {
+      max-width: 100%;
+      max-height: 320px;
+      border-radius: 12px;
+      border: 3px solid #23426933;
+      box-shadow: 0 2px 8px rgba(35,66,105,0.09);
+    }
+    table.arch-table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      margin-top: 25px;
+      margin-bottom: 15px;
+    }
+    table.arch-table td {
+      vertical-align: middle;
+    }
+    .col-img {
+      width: 200px;
+      text-align: center;
+      padding: 16px;
+    }
+    .col-img img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 2px solid #eee;
+      box-shadow: 0 2px 6px rgba(35,66,105,0.08);
+    }
+    .col-text {
+      width: 600px;
+      font-size: 1.18rem;
+      line-height: 1.7;
+      color: #385574;
+      background: #e8f0fa;
+      padding: 34px 30px;
+      border-radius: 10px;
+      border: 1px solid #d4e1f5;
+      box-shadow: 0 1px 4px rgba(56,85,116,0.07);
+      text-align: justify;
+    }
+    @media (max-width: 1150px) {
+      .container { width: 96vw; padding: 12px 6px; }
+      .col-img img, .imageContainer img { max-width: 120px !important; height: auto; }
+      .col-text { padding: 10px 6px; font-size: 1rem; }
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+<div class="container">
+  <h1>Architecture: Art &amp; Science of Design</h1>
+  <div class="imageContainer">
+    <img src="https://via.placeholder.com/600x400?text=Modern+Building" alt="Modern Architectural Building">
+  </div>
+  <table class="arch-table">
+    <tr>
+      <td class="col-img">
+        <img src="https://via.placeholder.com/200x200?text=Arch+1" alt="Classical Architecture">
+      </td>
+      <td class="col-text">
+        Architecture blends creativity and engineering, shaping the spaces where we live, work, and find inspiration. From classical sculptures and gothic cathedrals to modern skyscrapers, each structure tells a unique story. Good architecture harmonizes functionality with aesthetics, considering culture, history, and the needs of society while innovating for the future.
+      </td>
+      <td class="col-img">
+        <img src="https://via.placeholder.com/200x200?text=Arch+2" alt="Contemporary Architecture">
+      </td>
+    </tr>
+  </table>
+</div>
 </body>
-
 </html>
